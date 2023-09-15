@@ -1,0 +1,24 @@
+body {
+    color: white !important;;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom, #60A5FA, #3B82F6);
+}
+
+.custom-heading {
+    font-size: 3rem; 
+    text-align: center; 
+    margin-top: 2rem; 
+}
+
+.lead {
+    font-size: 1.5rem; 
+    text-align: center; 
+    margin-top: 2rem; 
+}
+
+.custom-input {
+    width: 200px; 
+}

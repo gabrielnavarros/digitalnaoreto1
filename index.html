@@ -4,41 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caroline Sada - Curso de Finanzas</title>
-    <!-- Enlaza Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Enlaza Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Enlaza la fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+
 </head>
-<body class="bg-gradient-to-b from-blue-400 to-blue-600 font-sans">
-    <header class="bg-blue-500 text-white py-4">
+
+<body class="gradient-bg">
+    <header>
         <nav class="container mx-auto">
-            <!-- Tu menú de navegación aquí -->
+            
         </nav>
     </header>
-    <main class="container mx-auto py-8">
+    <main>
         <!-- Sección del curso de finanzas -->
-        <section class="text-center mb-12">
-            <h1 class="text-4xl font-semibold text-white">Descubre el Curso de Finanzas</h1>
-            <p class="text-lg text-gray-100 mt-4">Aprende a tomar el control de tus finanzas con Caroline Sada, experta en el campo financiero.</p>
-            <img src="/Assets/calculadora.svg" alt="Curso de Finanzas" class="mx-auto my-8 rounded-lg shadow-lg">
+        <section >
+            <h1 class="custom-heading">¡Bienvenidos al Curso de Finanzas con Caroline Sada!</h1>
+            <p class="lead">Descubre el camino hacia el éxito financiero de la mano de una verdadera experta.
+                <br> En este emocionante viaje, aprenderás a tomar el control completo de tus finanzas personales y a construir un futuro financiero sólido.</br>
+            </p>
+            <img src="/Assets/calculadora.svg" alt="Curso de Finanzas" class="mx-auto my-4 rounded-lg shadow-lg img-fluid">
         </section>
         
         <!-- Sección sobre Caroline Sada -->
-        <section class="text-center mb-12">
-            <h2 class="text-3xl font-semibold text-white">Conoce a Caroline Sada</h2>
-            <p class="text-lg text-gray-100 mt-4">Licenciada en Administración y Dirección de Empresas, Caroline Sada es una influencer financiera con más de 3 años de experiencia en el campo financiero. Su habilidad de comunicación, empatía con los proveedores, gestión financiera y liderazgo la han convertido en una experta en finanzas para emprendedores.</p>
-            <img src="/Assets/pareja.svg" alt="Caroline Sada" class="mx-auto my-8 rounded-lg shadow-lg">
+        <section>
+            <h2 class="display-4 text-center">Conoce a Caroline Sada</h2>
+            <p class="lead">Caroline Sada, una destacada licenciada en Administración y Dirección de Empresas con más de 3 años de experiencia en el campo financiero, te guiará en cada paso del proceso. 
+                <br> No solo es una experta en números, ¡sino también una comunicadora apasionada que hará que los conceptos financieros cobren vida!</br>
+            </p>
+            <img src="/Assets/pareja.svg" alt="Caroline Sada" class="mx-auto my-4 rounded-lg shadow-lg img-fluid">
         </section>
         
         <!-- Sección de CTA final -->
-        <section class="text-center">
-            <form action="procesar_formulario.php" method="POST" class="w-full max-w-md mx-auto">
-                <!-- Campos del formulario de contacto -->
-                <input type="text" name="nombre" placeholder="Nombre" class="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-4 mb-4">
-                <input type="email" name="correo" placeholder="Correo electrónico" class="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-4 mb-4">
-                <button class="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 mt-6">¡Inscríbete Ahora!</button>
+        <section>
+            <h2 class="display-4 text-center">¡Inscribete ahora!</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fs-5 ms-2">Correo Electrónico</label>
+                    <input type="email" placeholder="Correo Electrónico" class="form-control custom-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label fs-5 ms-2">Contraseña</label>
+                    <input type="password" placeholder="Contraseña"  class="form-control custom-input" id="exampleInputPassword1">
+                </div>                
+                
+                <div class="mb-3 text-center">
+                    <button type="submit" class="btn btn-outline-light btn-lg">Inscribirme</button>
+                </div>                
             </form>
         </section>
+
     </main>
-    <footer class="bg-blue-500 text-white py-4 text-center">
+    
+    <footer class="bg-primary text-white py-4 text-center">
         <p>&copy; 2023 Caroline Sada - Todos los derechos reservados</p>
     </footer>
 </body>
