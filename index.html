@@ -7,57 +7,114 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Enlaza Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Enlaza la fuente de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
 
+
+
 </head>
 
 <body class="gradient-bg">
     <header>
-        <nav class="container mx-auto">
-            
+         <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#signup">Inscribete</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
+
         <!-- Sección del curso de finanzas -->
-        <section >
-            <h1 class="custom-heading">¡Bienvenidos al Curso de Finanzas con Caroline Sada!</h1>
-            <p class="lead">Descubre el camino hacia el éxito financiero de la mano de una verdadera experta.
-                <br> En este emocionante viaje, aprenderás a tomar el control completo de tus finanzas personales y a construir un futuro financiero sólido.</br>
-            </p>
-            <img src="/Assets/calculadora.svg" alt="Curso de Finanzas" class="mx-auto my-4 rounded-lg shadow-lg img-fluid">
-        </section>
+        <h1 class="custom-heading">¡Bienvenidos al Curso de Finanzas con Caroline Sada!</h1>
+            <section class="container" id="home">
+                <div class="row center-vertical"> 
+                    <div class="col-md-6">
+                        <p class="lead">Descubre el camino hacia el éxito financiero de la mano de una verdadera experta.
+                            <br> En este emocionante viaje, aprenderás a tomar el control completo de tus finanzas personales y a construir un futuro financiero sólido.</br>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/Assets/calculadora.svg" alt="Curso de Finanzas" class="mx-auto my-4 rounded-lg shadow-lg img-fluid">
+                    </div>
+                </div>
+            </section>
         
         <!-- Sección sobre Caroline Sada -->
-        <section>
-            <h2 class="display-4 text-center">Conoce a Caroline Sada</h2>
-            <p class="lead">Caroline Sada, una destacada licenciada en Administración y Dirección de Empresas con más de 3 años de experiencia en el campo financiero, te guiará en cada paso del proceso. 
-                <br> No solo es una experta en números, ¡sino también una comunicadora apasionada que hará que los conceptos financieros cobren vida!</br>
-            </p>
-            <img src="/Assets/pareja.svg" alt="Caroline Sada" class="mx-auto my-4 rounded-lg shadow-lg img-fluid">
-        </section>
-        
-        <!-- Sección de CTA final -->
-        <section>
-            <h2 class="display-4 text-center">¡Inscribete ahora!</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label fs-5 ms-2">Correo Electrónico</label>
-                    <input type="email" placeholder="Correo Electrónico" class="form-control custom-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <h2 class="display-4 text-center">Conoce a Caroline Sada</h2>
+            <section class="container" id="about">
+                <div class="row center-vertical">
+                    <div class="col-md-6">
+                        <p class="lead">Caroline Sada, una destacada licenciada en Administración y Dirección de Empresas con más de 3 años de experiencia en el campo financiero, te guiará en cada paso del proceso. 
+                            <br> No solo es una experta en números, ¡sino también una comunicadora apasionada que hará que los conceptos financieros cobren vida!</br>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/Assets/pareja.svg" alt="Caroline Sada" class="mx-auto my-4 rounded-lg shadow-lg img-fluid">
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label fs-5 ms-2">Contraseña</label>
-                    <input type="password" placeholder="Contraseña"  class="form-control custom-input" id="exampleInputPassword1">
-                </div>                
-                
-                <div class="mb-3 text-center">
-                    <button type="submit" class="btn btn-outline-light btn-lg">Inscribirme</button>
-                </div>                
-            </form>
-        </section>
+            </section>
+        
+        
+        <!-- Más información sobre el curso -->
+        <h2 class="display-4 text-center">¿Qué aprenderás en este curso?</h2>
+            <section class="container" id="course">
+                <div class="row">
+                    <div class="col-md-12 text-center"> 
+                        <p class="lead">En este curso, explorarás una variedad de temas financieros importantes que te ayudarán a tener un control completo de tus finanzas. Algunos de los temas incluyen:</p>
+                        <div class="d-flex justify-content-center align-items-center"> 
+                            <ul class="text-left">
+                                <li>Planificación financiera personal.</li>
+                                <li>Inversiones y ahorros inteligentes.</li>
+                                <li>Gestión de deudas y crédito.</li>
+                                <li>Presupuesto efectivo.</li>
+                            </ul>
+                        </div>
+                        <p class="lead">Además, tendrás acceso a herramientas y recursos de vanguardia para ayudarte en tu viaje hacia el éxito financiero.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Sección de CTA final -->
+        <h2 class="display-4 text-center">¡Inscríbete ahora!</h2>
+            <section class="container" id="signup">
+                <div class="row center-vertical"> <!-- Agregamos las clases center-vertical aquí -->
+                    <div class="col-md-6 offset-md-3 text-center">
+        
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Correo Electrónico" class="form-control custom-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" placeholder="Contraseña"  class="form-control custom-input" id="exampleInputPassword1">
+                            </div>                
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-outline-light btn-lg">Inscribirme</button>
+                            </div>                
+                        </form>
+                    </div>
+                </div>
+            </section>
 
     </main>
     
