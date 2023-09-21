@@ -22,3 +22,8 @@ body {
 .custom-input {
     width: 200px; 
 }
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
